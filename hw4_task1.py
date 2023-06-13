@@ -11,5 +11,9 @@ m = int(input("Введите количесво элментов первого
 first = list(random.randint(0, 10) for i in range(n))
 second = list(random.randint(0, 10) for i in range(m))
 
-print('Набор n', first)
-print('Набор m', second)
+print('Набор n:', first)
+print('Набор m:', second)
+
+result = set(first) and set(second)
+
+print("Встречаемые числа: ", result)
